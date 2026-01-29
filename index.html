@@ -1,0 +1,25 @@
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OWトロールカスタム - プレイヤー入力</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+    <h3>OWトロールカスタム</h3>
+
+    <div id="container"></div>
+    <div class="buttonArea">
+        <button id="userBtn" onclick="savePlayers()">決定</button>
+        <button id="addBtb" onclick="addInput()">追加</button>
+        <button id="removeBtn" onclick="removeInput()">削除</button>
+        <input type="text" id="saveText" value="" placeholder="プリセット名">
+        <button id="saveBtn" onclick="saveBtn()" >保存</button>
+    </div>
+    <div id="presetContainer">
+        <h3>保存済みプリセット</h3>
+        <div id="presetList"></div>
+    </div>
+</body>
+</html>
